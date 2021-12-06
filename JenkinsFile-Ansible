@@ -1,0 +1,14 @@
+pipeline {
+  agent any
+  stages {
+    stage ('Ansible-Version') {
+      steps {
+        sh '''
+          ansible --version
+          ansible-playbook --version
+          ansible-playbook -i inventory host.yml
+        '''
+      }
+    }
+  }
+}
