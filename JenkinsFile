@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage ('Hello') {
+    stage ('Ansible-Version') {
       steps {
         sh '''
           ansible --version
