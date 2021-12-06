@@ -7,6 +7,7 @@ pipeline {
     stage ('Ansible-Version') {
       steps {
         sh '''
+          echo "hello"
           ansible --version
           ansible-playbook --version
           ansible-playbook -i inventory host.yml
