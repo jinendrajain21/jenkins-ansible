@@ -1,4 +1,4 @@
 [all:vars]
 ansible_connection = ssh
 [host]
-host1 ansible_host=172.31.44.191 ansible_user=ubuntu ansible_ssh_pass=jinendra@1
+host1 ansible_host=172.31.44.191 ansible_user=ubuntu ansible_ssh_pass=
